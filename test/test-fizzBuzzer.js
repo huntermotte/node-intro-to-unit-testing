@@ -32,9 +32,10 @@ describe('fizzBuzzer', function() {
   });
 
   it('should give us an error if not a number', function() {
-    const errorCases = ['a', false, function(){}];
+    const errorCases = ['a', false];
     errorCases.forEach(function(input) {
-      fizzBuzzer(input).should.throw(Error);
+      (function() {
+      fizzBuzzer(input)}).should.throw(Error);
     });
   });
 });
