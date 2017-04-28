@@ -6,7 +6,7 @@ describe('fizzBuzzer', function() {
   it('should return fizzBuzz if the number is divisible by 15', function() {
     const normalCases = [15,30,45];
     normalCases.forEach(function(input) {
-      fizzBuzzer(input).should.equal('fizzBuzz');
+      fizzBuzzer(input).should.equal('fizz-Buzz');
     });
   });
 
@@ -32,7 +32,7 @@ describe('fizzBuzzer', function() {
   });
 
   it('should give us an error if not a number', function() {
-    const errorCases = [1,2,4,7,11];
+    const errorCases = ['a', false, function()];
     errorCases.forEach(function(input) {
       fizzBuzzer(input).should.throw(Error);
     });
