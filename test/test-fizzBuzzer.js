@@ -19,23 +19,21 @@ describe('fizzBuzzer', function() {
 
   it('should return fizz is the number is divisible by 3', function() {
     const normalCases = [3,6,9];
-    normalCases.forEach(input) {
+    normalCases.forEach(function(input) {
       fizzBuzzer(input).should.equal('fizz');
     });
   });
 
   it('should return a number if not a fizzBuzz number', function() {
     const normalCases = [1,2,4,7,11];
-    normalCases.forEach(input) {
+    normalCases.forEach(function(input) {
       fizzBuzzer(input).should.equal(input);
     });
   });
 
   it('should give us an error if not a number', function() {
-    const errorCases = ['a', true, function()];
+    const errorCases = [1,2,4,7,11];
     errorCases.forEach(function(input) {
       fizzBuzzer(input).should.throw(Error);
-    })
-  });
-});
-});
+    });
+  };
