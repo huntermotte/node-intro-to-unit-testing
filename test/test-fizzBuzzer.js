@@ -37,4 +37,4 @@ describe('fizzBuzzer', function() {
       fizzBuzzer(input).should.throw(Error);
     });
   });
-};
+});
