@@ -36,5 +36,5 @@ describe('fizzBuzzer', function() {
     errorCases.forEach(function(input) {
       fizzBuzzer(input).should.throw(Error);
     });
-  };
+  });
 };
