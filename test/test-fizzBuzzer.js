@@ -1,5 +1,5 @@
 const should = require('chai').should();
-const adder = require('../fizzBuzzer');
+const fizzBuzzer = require('../fizzBuzzer');
 
 describe('fizzBuzzer', function() {
   it('should return fizzBuzz if the number is divisible by 15', function() {
